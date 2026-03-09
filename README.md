@@ -63,36 +63,121 @@ Test your webpage in a browser.
 ## PROGRAM:
 ```
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<title>Product Card</title>
+
 <style>
-body{font-family:Arial;text-align:center;background:#f2f2f2}
 
-.card{width:300px;margin:80px auto;padding:15px;background:#fff;
-border-radius:10px;transition:0.3s;box-shadow:0 4px 8px gray}
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
 
-.card:hover{transform:translateY(-8px);box-shadow:0 10px 20px gray}
+/* Product Card */
+.product-card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    padding:20px;
+    margin-top:80px;
+    transition:0.4s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
 
-.card img{width:100%;transition:0.3s;border-radius:10px}
+/* Hover Effect */
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.35);
+}
 
-.card:hover img{transform:scale(1.1)}
+/* Image */
+.product-image{
+    width:100%;
+    border-radius:10px;
+    transition:0.4s;
+}
 
-button{padding:8px 15px;background:blue;color:white;border:none;transition:0.3s}
+/* Image Zoom */
+.product-card:hover .product-image{
+    transform:scale(1.1);
+}
 
-.card:hover button{background:orange}
+/* Product Name */
+.product-name{
+    font-size:22px;
+    margin-top:15px;
+}
 
-footer{background:black;color:white;padding:10px;margin-top:40px}
+/* Description */
+.product-desc{
+    font-size:14px;
+    color:#555;
+    margin:10px 0;
+}
+
+/* Price */
+.price{
+    font-size:20px;
+    color:#e63946;
+    font-weight:bold;
+}
+
+/* Button */
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#0077ff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Button Hover */
+.product-card:hover button{
+    background:#ff6600;
+}
+
+/* Footer */
+footer{
+    margin-top:auto;
+    width:100%;
+    text-align:center;
+    background:#222;
+    color:white;
+    padding:15px;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="card">
-<img src="https://via.placeholder.com/300">
-<h3>Smart Watch</h3>
-<p>Fitness watch</p>
-<h4>₹2999</h4>
+<div class="product-card">
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" class="product-image">
+
+<h2 class="product-name">Smartphone</h2>
+
+<p class="product-desc">
+Latest smartphone with high speed processor, long battery life and stunning display.
+</p>
+
+<p class="price">₹25,999</p>
+
 <button>Add to Cart</button>
+
 </div>
 
 <footer>
@@ -103,7 +188,8 @@ Learner Name: Shylash A | Register Number: IT-25018785
 </html>
 ```
 ## OUTPUT:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/08f6319e-b8ca-4ae1-bc64-4420a422e768" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3827bdd8-c591-45fa-8f92-ff9d0cf1171a" />
+
 
 
 ## RESULT:
