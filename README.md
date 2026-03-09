@@ -61,8 +61,50 @@ Style the footer using background color and center alignment.
 Test your webpage in a browser.
 
 ## PROGRAM:
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{font-family:Arial;text-align:center;background:#f2f2f2}
 
+.card{width:300px;margin:80px auto;padding:15px;background:#fff;
+border-radius:10px;transition:0.3s;box-shadow:0 4px 8px gray}
+
+.card:hover{transform:translateY(-8px);box-shadow:0 10px 20px gray}
+
+.card img{width:100%;transition:0.3s;border-radius:10px}
+
+.card:hover img{transform:scale(1.1)}
+
+button{padding:8px 15px;background:blue;color:white;border:none;transition:0.3s}
+
+.card:hover button{background:orange}
+
+footer{background:black;color:white;padding:10px;margin-top:40px}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Smart Watch</h3>
+<p>Fitness watch</p>
+<h4>₹2999</h4>
+<button>Add to Cart</button>
+</div>
+
+<footer>
+Learner Name: Shylash A | Register Number: IT-25018785
+</footer>
+
+</body>
+</html>
+```
 ## OUTPUT:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/08f6319e-b8ca-4ae1-bc64-4420a422e768" />
+
 
 ## RESULT:
 The Product Card with Hover Effect was successfully designed using HTML and CSS.
